@@ -1,0 +1,11 @@
+.h-hide {
+  display: none;
+}
+
+.h-visually-hidden {
+  @include visuallyhidden;
+}
+
+.h-noscroll {
+  overflow: hidden;
+}

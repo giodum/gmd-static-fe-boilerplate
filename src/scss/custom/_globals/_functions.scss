@@ -1,0 +1,5 @@
+// Px to rem conversion.
+// 16 is the base font size set in the body
+@function pxrem($pixels) {
+  @return #{calc($pixels/16)}rem;
+}

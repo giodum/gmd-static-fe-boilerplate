@@ -1,0 +1,13 @@
+@use 'sass:list';
+@use 'sass:string';
+
+// External style import
+// @import 'sass-mq/mq';
+@import '/_external/mq/*';
+
+// Custom style import
+@import '/custom/_globals/*';
+@import '/custom/base/*';
+@import '/custom/components/*';
+@import '/custom/layout/*';
+@import '/custom/modules/*';

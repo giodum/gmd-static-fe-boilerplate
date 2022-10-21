@@ -1,0 +1,46 @@
+assets:
+  src: src/
+  dest: dist/
+twig:
+  data: src/twig/_data/data.yml
+  src: src/twig/
+  files:
+    - src/twig/*.twig
+  dest: dist/
+  watch: src/twig/**/*.twig
+scss:
+  src: src/scss/
+  files:
+    - src/scss/*.scss
+  dest: dist/assets/css/
+  watch: src/scss/**/*.scss
+scripts:
+  src: src/js/
+  files:
+    - src/js/**/*.js
+  dest: dist/assets/js/
+  watch: src/js/**/*.js
+images:
+  src: src/images/
+  files:
+    - src/images/**
+    - '!src/images/svg'
+    - '!src/images/svg/**'
+  dest: dist/assets/images/
+svgs:
+  src: 
+    - src/images/svg/*.svg
+    - '!src/images/svg/svg-symbols.svg'
+  dest: src/images/svg/
+vendors:
+  src: src/vendors/
+  filesStyle:
+    - src/vendors/**/*.css
+    - src/vendors/**/*.scss
+  filesScript:
+    - src/vendors/**/*.js
+  dest: dist/assets/vendors/
+static:
+  dirs:
+    - src/static/**/*
+  dest: dist/assets/

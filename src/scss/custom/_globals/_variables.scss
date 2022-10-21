@@ -1,0 +1,56 @@
+// =============================================================================
+// Sizes
+// =============================================================================
+
+// Media queries sizes
+$size-xsmall:   460px;
+$size-small:    640px;
+$size-medium:   768px;
+$size-normal:   1024px;
+$size-large:    1200px;
+$size-full:     1440px;
+
+// Max widths and fixed components heights
+$size-maxwidth:         1300px;
+$size-maxwidth-large:   1600px;
+
+$header-height:         50px;
+$header-height-small:   35px;
+
+// =============================================================================
+// Colors
+// =============================================================================
+
+// Brand colors
+$color-green:           #C8D100;
+$color-green-dark:      darken(#C8D100, 15);
+
+// Neutral colors
+$color-white:           #FFFFFF;
+$color-gray-light:      #F9F9F9;
+$color-gray:            #5C5C5C;
+$color-gray-dark:       #333333;
+$color-black:           #000000;
+
+
+// =============================================================================
+// Typography
+// =============================================================================
+
+$font-primary: 'Lato', sans-serif;
+$font-secondary:  Georgia, Times, 'Times New Roman', serif;
+
+$font-xsmall:       pxrem(13);
+$font-small:        pxrem(14);
+$font-normal:       pxrem(16);
+$font-medium:       pxrem(18);
+$font-discrete:     pxrem(24);
+$font-large:        pxrem(32);
+$font-xlarge:       pxrem(38);
+
+
+// =============================================================================
+// Transitions
+// =============================================================================
+
+$transition-default: 250ms ease-in-out;

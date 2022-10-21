@@ -1,0 +1,13 @@
+{% extends 'layouts/base.twig' %}
+{% set page_title = 'Home page' %}
+{% set page_description = 'Home page description' %}
+{% set page_class = 'front-page' %}
+
+{% block main %}
+
+  {# variable defined in data.yml #}
+  {{ content.title }}
+
+  {# {% include "partials/section/block.twig" %} #}
+
+{% endblock %}

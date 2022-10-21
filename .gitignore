@@ -1,0 +1,54 @@
+# ---------- #
+# Node files
+# ---------- #
+node_modules
+npm-debug.log
+.npm
+
+# ---------- #
+# Bower files
+# ---------- #
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
+# ------------- #
+# Compiled files
+# ------------- #
+dist/
+
+# ---------- #
+# OS files
+# ---------- #
+.DS_Store*
+._.DS_Store*
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+$RECYCLE.BIN/
+*.lnk
+
+# ---------- #
+# Thumbnails
+# ---------- #
+._*
+
+# ---------- #
+# Lando files
+# ---------- #
+.lando.yml
+
+# ----------- #
+# Editors files
+# ----------- #
+.code-workspace
+.settings/
+.vscode/
