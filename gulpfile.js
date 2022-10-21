@@ -210,7 +210,6 @@ function js() {
                 )
                 .pipe(gulpConcat('main.min.js'))
                 .pipe(gulpTerser({ mangle: false, ecma: 6 }))
-                .pipe(gulpIf(isProd, gulpUglify()))
                 .pipe(gulpIf(!isProd, gulpSourcemaps.write('maps')))
                 .pipe(gulp.dest(gulpConfig.scripts.dest))
 }
