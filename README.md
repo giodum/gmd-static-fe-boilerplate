@@ -8,7 +8,6 @@ This is a gulp based front-end boilerplate suitable for static multipages websit
 It uses Gulp 4, Twig, Sass, ES6, BrowserSync (including minification for production environment).
 It trades on BrowserSync to show code changes in real time. 
 
-&nbsp;
 
 ## 💻 Requirements 
 ### [NodeJs](https://nodejs.org/it/)
@@ -24,10 +23,6 @@ npm -v
 ```
 npm install gulp-cli -g
 ```
-
-&nbsp;
-___ 
-&nbsp;
 
 ## 🚀 **Quick start**
 
@@ -45,10 +40,6 @@ ___
     ```
     gulp
     ```
-
-&nbsp;    
-___ 
-&nbsp;
 
 ## 🏛 **Boilerplate architecture**
 After installing and compiling with ``gulp`` the first level of the directories should be like this:
@@ -78,10 +69,6 @@ After installing and compiling with ``gulp`` the first level of the directories 
 + `package-lock.json`: automatically generated file based on the exact versions of npm dependencies that were installed for the current project. This file **should not be modified directly**.
 + `README.md`: text file containing information about the project and how to use it.
 
-&nbsp;
-___ 
-&nbsp;
-
 ## 🍝 **Source code directory** (no more spaghetti code)
 
 In order to provide a higher level of code management a stricht architecture has been proposed for the `scr/` directory. Let's see all the subdirectories and the associated technologies.
@@ -96,21 +83,17 @@ In order to provide a higher level of code management a stricht architecture has
     └── vendors/
 ```
 
-&nbsp;
 
   ### **Images**
   This is the directory where all the images needed for the website developing have to be put. It can be organized into subdirectories.
   
   There is a reserved directory called `svg/`. All the svg images put in this directory will be processed and joined in a unique final svg files, including the previous original svg images as symbols. This file will be automatically inline-included in the final html file, so that all the svg images can be referenced as symbols. 
-  
-  &nbsp;
+
 
   ### **JavaScript**
   The `js/` directory contains all the scripting files, according to JavaScript ES6 standards. 
   
   There is a `main.js` file, which should include and initialize all the classes (theoretically each component should have a specific class for managing its behaviour) stored in the `modules/` subdir.
-
-  &nbsp;
 
   ### **Style**
   The `scss/` directory contains all the style files written in Sass. 
@@ -123,12 +106,8 @@ In order to provide a higher level of code management a stricht architecture has
 
   All the custom code should be written inside the `custom/` directory, according to best practices.
 
-  &nbsp;
-
   ### **Static**
   This directory should contain all that files that do not need any kind of processing, such as external fonts, favicon files and etc.
-
-  &nbsp;
 
   ### **Twig**
   This directory contains all the structure markup for the webpages. The markup has to be written using the homonym templating language. 
@@ -141,16 +120,11 @@ In order to provide a higher level of code management a stricht architecture has
 
   Aiming to better manage structure and content, it is possible to separate markup and data to be used. In order to achive that is is possible to use the yaml file `twig/_data/data.yml` containing all the content do be included in the web pages. While compiling all the variables defined in the twig templates will be resolved and substituted with the relative content defined in the `data.yml` file. 
 
-  &nbsp;
-
   ### **Vendors**
   The vendors dir is intended to group all the external vendors libraries (are accepted `.js`, `.css` and `.scss` files). 
 
   While compiling all the vendors files will be joined into two unique `vendors.css` and `vendors.js` files, which can be included into the web pages. 
 
-&nbsp;
-___ 
-&nbsp;
 
 ## ✨ **Compiling with Gulp tasks**
 
@@ -173,8 +147,6 @@ Let's start considering all the atomic tasks:
 + `gulp vendors`: as said before all the vendors files contained in this directory will be joined into two unique files (`vendors.css` and `vendors.js`) and stored into `dist/assets/vendors/` directory.
 + `gulp static`: copies recursively all the files inside this directory and make a copy of them inside `dist/assets/`.
 
-&nbsp;
-
 There is a special task that needs a deepening.
 
 ```
@@ -184,8 +156,6 @@ gulp watch
 Launching this command all the previous tasks will be run parallely (with the exceptio of the `clean` task, which will not be run). After that, the BrowserSync module will run a local server and open a browser window, showing the website project.
 
 Contrary to the other tasks, after lauching this command the process will not end automatically. The process will keep listening to changes in our source files and when detecting one, it will compile again our source code and update independently the browser.
-
-&nbsp;
 
 ### **Compiling for production env**
 

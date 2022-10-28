@@ -1,9 +1,9 @@
 .h-hide {
-  display: none;
+  @include hidden;
 }
 
 .h-visually-hidden {
-  @include visuallyhidden;
+  @include visually-hidden;
 }
 
 .h-noscroll {

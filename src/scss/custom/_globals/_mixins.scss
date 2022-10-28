@@ -1,28 +1,77 @@
-// =============================================================================
-// Generic.
-// =============================================================================
+// ===================================
+// Generic
+// ===================================
 
 // Set max width and center element
-@mixin maxWidth($maxWidth: $maxwidth) {
+@mixin max-width($maxWidth: $maxwidth) {
   max-width: $maxWidth;
   margin-left: auto;
   margin-right: auto;
-  width: 95%;
+  width: 100%;
 }
 
-// =============================================================================
-// Typography
-// =============================================================================
-
 // Font smoothing
-@mixin fontSmoothing {
+@mixin font-smoothing {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-// =============================================================================
-// Helpers.
-// =============================================================================
+// Customize scrollbar
+@mixin scrollbar($width: 4px, $track: $color-gray-lightest, $thumb: $color-gray-dark, $hover: $color-blue) {
+
+	&::-webkit-scrollbar {
+		width: $width;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: $track;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $thumb;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background: $hover;
+	}
+}
+
+// Set placeholder color
+@mixin placeholder($color, $font-size: 1em) {
+	&::-webkit-input-placeholder {
+		/* Chrome/Opera/Safari */
+		color: $color;
+		font-size: $font-size;
+	}
+
+	&::-moz-placeholder {
+		/* Firefox 19+ */
+		color: $color;
+		font-size: $font-size;
+	}
+
+	&:-ms-input-placeholder {
+		/* IE 10+ */
+		color: $color;
+		font-size: $font-size;
+	}
+
+	&:-moz-placeholder {
+		/* Firefox 18- */
+		color: $color;
+		font-size: $font-size;
+	}
+
+	&::placeholder {
+		color: $color;
+		font-size: $font-size;
+	}
+}
+
+
+// ===================================
+// Helpers
+// ===================================
 
 // Hide from browsers and screenreaders
 @mixin hidden {
@@ -31,7 +80,7 @@
 }
 
 // Hide only visually (still available for screenreaders)
-@mixin visuallyhidden {
+@mixin visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -54,3 +103,117 @@
     clear: both;
   }
 }
+
+
+// ===================================
+// Images
+// ===================================
+
+// Icon bg
+@mixin icon-bg($url, $width: 1em, $height: 1em) {
+	background-image: url($url);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: '';
+	display: block;
+	height: $height;
+	width: $width;
+}
+
+// Set svg icon color 
+@mixin icon-color($color: $color-black) {
+	fill: $color;
+	stroke: $color;
+
+	circle,
+	path,
+	polygon,
+	rect {
+		fill: $color;
+		stroke: $color;
+	}
+}
+
+// Set svg icon color 
+@mixin icon-nostroke {
+	stroke: none !important;
+
+	circle,
+	path,
+	polygon,
+	rect {
+		stroke: none !important;
+	}
+}
+
+
+// ===================================
+// Reset components
+// ===================================
+
+// Reset list style
+@mixin button-reset {
+	-webkit-appearance: none;
+	-webkit-user-select: none;
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: inherit;
+	font: inherit;
+	padding: 0;
+}
+
+// Reset list style
+@mixin list-reset {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+
+	> li {
+		padding: 0;
+	}
+
+	> a {
+		display: inline-block;
+	}
+}
+
+// Reset form field style 
+@mixin field-reset {
+	appearance: none;
+	-webkit-appearance: none;
+	background: none;
+	border: none;
+	box-shadow: none;
+	color: inherit;
+	display: inline-block;
+	font: inherit;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+
+	&:focus {
+		outline: none;
+	}
+
+	&::-ms-expand {
+		display: none;
+	}
+}
+
+// Reset checkbox style
+@mixin checkbox-reset {
+	appearance: none;
+	background: none;
+	background-color: transparent;
+	-webkit-appearance: none;
+	font: inherit;
+	margin: 0;
+}
+
+// ===================================
+// Custom mixins - custom elements
+// ===================================
+
+// Insert here custom mixins code

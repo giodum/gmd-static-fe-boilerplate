@@ -1,0 +1,36 @@
+// Convert cols system to vw - to be included for 24 cols 
+// IMPORTANT: to be included for 24 cols grid (full-width)
+// @mixin make-col($size, $columns: $grid-columns) {
+// 	flex: 0 0 (($size / $columns) * 100vw);
+// 	// Add a `max-width` to ensure content within each column does not blow out
+// 	// the width of the column. Applies to IE10+ and Firefox. Chrome and Safari
+// 	// do not appear to require this.
+// 	max-width: (calc($size / $columns) * 100vw);
+// }
+
+// @mixin make-col-offset($size, $columns: $grid-columns) {
+// 	$num: calc($size / $columns);
+// 	margin-left: if($num==0, 0, $num * 100vw);
+// } 
+
+// Convert cols system to vw - to be included for 24 cols 
+// IMPORTANT: to be included for classical 12 cols grid (boxed-width)
+// @mixin make-row-container() {
+// 	@include make-row;
+
+//     > * {
+//         @include make-col-ready;
+//     }
+// }
+
+// Responsive container
+// @mixin make-mobile-container {
+// 	padding-left: $mobile-gutter;
+// 	padding-right: $mobile-gutter;
+// 	max-width: 100%;
+	
+// 	@include mq(lg) {
+// 		padding-left: 0;
+// 		padding-right: 0;	
+// 	}
+// }

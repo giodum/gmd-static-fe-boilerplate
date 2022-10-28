@@ -1,7 +1,7 @@
 {
-  "name": "static-fe-boilerplate",
+  "name": "4l-static-fe-boilerplate",
   "author": "Giorgio Maria Duminuco <giodum@gmail.com>",
-  "description": "Gulp based front-end boilerplate for static pages",
+  "description": "Quattrolinee - Gulp based front-end boilerplate for static pages",
   "version": "1.0.0",
   "keywords": [
     "gulp",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "ansi-colors": "^4.1.3",
+    "bootstrap": "^5.2.2",
     "browser-sync": "^2.27.10",
     "del": "^6.0.0",
     "fs": "^0.0.1-security",

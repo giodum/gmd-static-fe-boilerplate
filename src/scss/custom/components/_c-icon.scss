@@ -1,0 +1,38 @@
+.icon {
+	display: block;
+	flex-shrink: 0;
+	pointer-events: none;
+
+	// Icon transformations
+	&.icon--rotate-45 {
+		transform: rotate(45deg);
+	}
+
+	&.icon--rotate-90 {
+		transform: rotate(90deg);
+	}
+
+	&.icon--rotate-180 {
+		transform: rotate(180deg);
+	}
+
+	&.icon--rotate-270 {
+		transform: rotate(270deg);
+	}
+
+	// Icon colors
+	&.icon--green {
+		@include icon-color($color-green);
+	}
+
+	// Custom icons
+	&.icon--name {
+		height: pxrem(44);
+		width: pxrem(120);
+
+		@include mq(nm) {
+			height: pxrem(60);
+			width: pxrem(160);
+		}
+	}
+}

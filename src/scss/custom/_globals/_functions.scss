@@ -1,5 +1,16 @@
-// Px to rem conversion.
+// Px to rem conversion
 // 16 is the base font size set in the body
 @function pxrem($pixels) {
   @return #{calc($pixels/16)}rem;
+}
+
+// Px to em conversion
+// 16 is the base font size set in the body
+@function pxem($pixels) {
+	@return #{calc($pixels/16)}em;
+}
+// Hex value to comma-delimited rgb values conversion
+// In: #000 - Out: 0,0,0
+@function derive-rgb-values-from-hex($hex) {
+	@return red($hex), green($hex), blue($hex);
 }

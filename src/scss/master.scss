@@ -2,7 +2,7 @@
 @use 'sass:string';
 
 // External style import
-// @import 'sass-mq/mq';
+@import '/_external/bootstrap/*';
 @import '/_external/mq/*';
 
 // Custom style import
