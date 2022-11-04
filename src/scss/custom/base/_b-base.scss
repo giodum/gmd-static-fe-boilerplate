@@ -20,6 +20,7 @@ body {
   @include font-smoothing;
   background-color: $color-white;
   color: $color-gray;
+  -webkit-text-size-adjust: 100%;
   font-family: $font-primary;
   font-size: $font-normal;
   height: 100%;
