@@ -49,6 +49,6 @@ $RECYCLE.BIN/
 # ----------- #
 # Editors files
 # ----------- #
-.code-workspace
+*.code-workspace
 .settings/
 .vscode/
