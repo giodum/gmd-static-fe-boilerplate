@@ -1,7 +1,7 @@
 {
-  "name": "4l-static-fe-boilerplate",
+  "name": "static-fe-boilerplate",
   "author": "Giorgio Maria Duminuco <giodum@gmail.com>",
-  "description": "Quattrolinee - Gulp based front-end boilerplate for static pages",
+  "description": "Gulp based front-end boilerplate for static pages",
   "version": "1.0.0",
   "keywords": [
     "gulp",
