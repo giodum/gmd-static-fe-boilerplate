@@ -21,8 +21,12 @@
 	}
 
 	// Icon colors
-	&.icon--green {
-		@include icon-color($color-green);
+	&.icon--white-fill {
+		@include icon-fill($color-white);
+	}
+
+	&.icon--white-stroke {
+		@include icon-stroke($color-white);
 	}
 
 	// Custom icons
@@ -30,7 +34,7 @@
 		height: pxrem(44);
 		width: pxrem(120);
 
-		@include mq(nm) {
+		@include mq(md) {
 			height: pxrem(60);
 			width: pxrem(160);
 		}

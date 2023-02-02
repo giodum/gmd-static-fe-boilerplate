@@ -122,6 +122,7 @@
 }
 
 // Set svg icon color 
+// Set svg icon color 
 @mixin icon-color($color: $color-black) {
 	fill: $color;
 	stroke: $color;
@@ -135,7 +136,30 @@
 	}
 }
 
-// Set svg icon color 
+@mixin icon-fill($color: $color-black) {
+	fill: $color;
+
+	circle,
+	path,
+	polygon,
+	rect {
+		fill: $color;
+	}
+}
+
+@mixin icon-stroke($color: $color-black) {
+	fill: none;
+	stroke: $color;
+
+	circle,
+	path,
+	polygon,
+	rect {
+		fill: none;
+		stroke: $color;
+	}
+}
+
 @mixin icon-nostroke {
 	stroke: none !important;
 

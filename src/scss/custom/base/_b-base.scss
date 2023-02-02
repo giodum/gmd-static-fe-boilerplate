@@ -8,10 +8,8 @@
 }
 
 html {
-  height: 100%;
   min-height: 100%;
   overflow-x: hidden;
-  overscroll-behavior: none;
 	scroll-behavior: smooth;
   width: 100%;
 }
@@ -23,7 +21,6 @@ body {
   -webkit-text-size-adjust: 100%;
   font-family: $font-primary;
   font-size: $font-normal;
-  height: 100%;
   line-height: 1.25;
   min-height: 100%;
   overflow-x: hidden;
@@ -46,7 +43,7 @@ a {
 
 	&:visited,
 	&:active {
-		color: $color-orange;
+		color: $color-green;
 	}
 }
 
@@ -54,6 +51,10 @@ img, media, svg {
   display: block;
   height: auto;
   max-width: 100%;
+
+  &.svg-symbols {
+    display: none;
+  }
 }
 
 ul, ol {
@@ -66,19 +67,4 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active  {
     -webkit-box-shadow: 0 0 0 30px white inset;
-}
-
-/* IE10+ specific styles */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html {
-    height: auto;
-  }
-}
-
-/* Safari 9 specific styles */
-@supports (overflow:-webkit-marquee)
-   and (justify-content:inherit) {
-    html {
-      height: auto;
-    }
 }

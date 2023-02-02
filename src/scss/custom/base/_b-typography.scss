@@ -1,0 +1,18 @@
+// Typography styles
+
+@mixin basicTypographyStyle() {
+  margin: 0;
+}
+
+@mixin title-1($color: $color-black) {
+  @include basicTypographyStyle;
+
+}
+
+@mixin title-2($color: $color-black) {
+  @include basicTypographyStyle;
+}
+
+@mixin paragraph($color: $color-black) {
+  @include basicTypographyStyle;
+}

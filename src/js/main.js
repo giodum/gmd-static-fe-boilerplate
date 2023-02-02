@@ -1,15 +1,20 @@
-import ObjectExample from "./modules/ObjectExample";
+import ObjectExample from './modules/ObjectExample'
 
-export default class Main {
-    
-	constructor() {
-		this.init();
-	}
+// Debug helper
+const debug = true
 
-	init() {
-		ObjectExample.init();
-	}
-
+if (!debug) {
+  console.log = function () {}
 }
 
-const main = new Main();
+export default class Main {
+  constructor() {
+    this.init()
+  }
+
+  init() {
+    ObjectExample.init()
+  }
+}
+
+const main = new Main()
